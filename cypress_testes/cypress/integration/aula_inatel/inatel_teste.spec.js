@@ -1,14 +1,14 @@
 /// <reference types="cypress"/>
 
-describe('Meu primeiro Teste', () => {
+describe('Caso de Teste: Teste UI (User Interface) - Teste de Sistema - Teste E2E - Site do Inatel', () => {
 
-    it('Login no site do Inatel', () => { 
+    it('Cenário: Login no site do Inatel', () => { 
 
         cy.visit('https://inatel.br/home/');
         cy.get('h1.colorfff').should('contain.text', 'Tecnologia é uma jornada.');
     });
 
-    it('Navegar ate Menu Aluno - Menu Cursos - Verificar que a pagina contem VESTIBULAR no primeiro icone e nao contem VESTIBULAR no quarto icone.', () => { 
+    it('Cenário: Navegar ate Menu Aluno - Menu Cursos - Verificar que a pagina contem VESTIBULAR no primeiro icone e nao contem VESTIBULAR no quarto icone.', () => { 
 
         cy.visit('https://inatel.br/home/');
         cy.get('#dropbtn > .fa').click();
@@ -18,7 +18,7 @@ describe('Meu primeiro Teste', () => {
 
     });
 
-    it('Login no site do Inatel - Engenharia de Software', () => { 
+    it('Cenário: Login no site do Inatel - Engenharia de Software', () => { 
 
         cy.visit('https://inatel.br/vestibular/engenharia-de-software');
         cy.get('.SJ-MT-15 > .color000 > .fa').click();
