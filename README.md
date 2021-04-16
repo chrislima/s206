@@ -4,19 +4,41 @@ Inatel.
 Engenharia de Software.
 Prof. Chris Lima
 
-Quem está trabalhando no Windows 10, será necessário instalar WSL + node para conseguir acompanhar a aula.
-Sigam estes passos:
 
-1 - Instalar WSL
-https://docs.microsoft.com/pt-br/windows/wsl/install-win10 (Utilizar instalação manual)
+Para quem está utilizando o Windows, será necessário baixar e instalar algumas ferramentas:
 
+cmder (linda de comando que já instala algumas dependências):
+https://cmder.net/
 
-2 - Instalar node.js
-https://docs.microsoft.com/pt-br/windows/nodejs/setup-on-wsl2 (siga as etapas em Instalar NVM, Node.js e NPM)
+Nodejs:
+https://nodejs.org/en/
 
-3 - Instale o VSCode e durante a instalação, marque a opção de Adicionar ao PATH!
+Git (Caso seja necessário):
+https://git-scm.com/downloads
 
+IDE VSCode:
+https://code.visualstudio.com/
 
+OBS: Pode usar qualquer IDE.
+
+Após a instalação de todos os itens, teste seu ambiente:
+
+Abra a linha de comando (cmder) e digite:
+
+which git
+
+deve aparecer o local do git, geralmente em:
+
+/cmd/git
+
+Isso significa que você tem o git instalado.
+
+Digite novamente no cmder:
+
+which node
+which code (Se tiver usando o VSCode)
+
+A resposta de cada comando deve ser o local de instalação de cada ferramenta.
 
 
 
