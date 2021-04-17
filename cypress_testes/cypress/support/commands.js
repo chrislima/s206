@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loginNinjaQa', (userName, password) => { 
+
+    cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login');
+    cy.get('#username').type(userName);
+    cy.get('#password').type(password);
+    cy.get('.btn-primary').click();
+    cy.get('h1.ng-binding').should('contain.text', userName);
+
+ })
