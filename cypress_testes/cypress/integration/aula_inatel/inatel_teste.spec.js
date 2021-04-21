@@ -1,8 +1,8 @@
 /// <reference types="cypress"/>
 
-describe('Caso de Teste: Teste UI (User Interface) - Teste de Sistema - Teste E2E - Site do Inatel', () => {
+describe('Caso de Teste: Verificar que as páginas do site do Inatel estão funcionando e apresentam o contéudo correto.', () => {
 
-    it('Cenário: Login no site do Inatel', () => { 
+    it('Cenário: Entrar no site do Inatel', () => { 
 
         cy.visit('https://inatel.br/home/');
         cy.get('h1.colorfff').should('contain.text', 'Tecnologia é uma jornada.');
