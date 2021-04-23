@@ -7,7 +7,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
     const userMail = 'qaninjainatel@qaninjainatel.com';
     const signedInMessage = 'Signed in successfully.'
 
-    it.skip('Cenário: Testar o form com valores de E-mail e Number válidos.', () => {
+    it('Cenário: Testar o form com valores de E-mail e Number válidos.', () => {
 
         cy.visit('https://testpages.herokuapp.com/styled/html5-form-test.html');
         cy.get('#email-field').clear();
@@ -18,7 +18,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
         cy.get('#_valueemail').should('contain.text', userMail);
     });
 
-    it.skip('Cenário: Testar alertas da pagina Fake Alert com texto parcial e completo', () => {
+    it('Cenário: Testar alertas da pagina Fake Alert com texto parcial e completo', () => {
 
         cy.visit('https://testpages.herokuapp.com');
         cy.get('#fakealerttest').click();
@@ -37,7 +37,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
 
     });
 
-    it.skip('Cenário: Testar a calculadora presente em testpages, utilizando todas as 4 operações disponíveis.', () => {
+    it('Cenário: Testar a calculadora presente em testpages, utilizando todas as 4 operações disponíveis.', () => {
 
         const operations = ['plus', 'times', 'minus', 'divide'];
         var value1 = Math.floor(Math.random() * 100);

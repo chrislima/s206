@@ -42,6 +42,8 @@ describe('Caso de Teste: Testar funcionalidades de Login do site globalsqa (angu
         var userInfo = createUserNinjaQa();
         cy.loginNinjaQa(userInfo[0], userInfo[1]);
         cy.get('.ng-binding > a').click();
+        cy.loginNinjaQa(userInfo[0], userInfo[1]);
+        cy.get('.ng-binding').should('have.text', 'Username or password is incorrect');
         
     });
 
