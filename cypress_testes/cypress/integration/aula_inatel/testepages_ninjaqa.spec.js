@@ -7,15 +7,25 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
     const userMail = 'qaninjainatel@qaninjainatel.com';
     const signedInMessage = 'Signed in successfully.'
 
-    it('Cenário: Testar o form com valores de E-mail e Number válidos.', () => {
+    it('Cenário: Testar o form com valores de E-mail e Number válidos. Logo em seguida, testar o tamanho da div na página de forms HTML5.', () => {
 
         cy.visit('https://testpages.herokuapp.com/styled/html5-form-test.html');
         cy.get('#email-field').clear();
+        //Digita o texto da variavel userMail
         cy.get('#email-field').type(userMail);
         cy.get('#number-field').clear();
         cy.get('#number-field').type(77);
         cy.get('[type="submit"]').click();
-        cy.get('#_valueemail').should('contain.text', userMail);
+        //Multiplas assertivas
+        cy.get('#_valueemail').should('contain.text', userMail).and('not.contain', 'aaa@inatel.br');
+
+        //Vai para outra página e faz o assertion por tamanho na div
+        cy.visit('https://testpages.herokuapp.com/styled/html5-form-test.html');
+
+        cy.get('.explanation').should(($div) => {
+            expect($div).to.have.length(1);
+        })
+
     });
 
     it('Cenário: Testar alertas da pagina Fake Alert com texto parcial e completo', () => {
