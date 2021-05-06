@@ -5,6 +5,7 @@ Background: Executa antes de cada teste.
 * def request_json = read('request_post0.json')
 * def request_json1 = read('request_post1.json')
 * def request_json2 = read('request_post2.json')
+* def request_json_final = read('request_post_final.json')
 
 #Lembrando que: $ = response
 # _ = variavel sendo testada
@@ -44,7 +45,7 @@ And match $.body == 'Essa é uma demonstracao da aula no Inatel0'
 And print karate.sizeOf(response)
 And match karate.sizeOf(response) == 4
 
-Scenario Outline: Testar a criação de recursos com o metodo (operacao) POST na API /posts utilizando uma request (json) externa com várias 3 requests diferentes.
+Scenario Outline: Testar a criação de recursos com o metodo (operacao) POST na API /posts utilizando uma request (json) externa com 3 requests diferentes.
 Given url url_base
 And path '/posts'
 And request <request_json>
@@ -63,8 +64,39 @@ Examples:
 |request_json2              | Essa é uma demonstracao da aula no Inatel2    |
 
 
+Scenario Outline: Testar a criação de recursos com o metodo (operacao) POST na API /posts utilizando uma request (json) externa com 3 requests diferentes. Utilizando somente um arquivo externo.
+Given url url_base
+And path '/posts'
+And request request_json_final
+When method post
+Then status 201
+And match $.title == '<title>'
+And match $.body == '<body>'
 
 
+Examples:
+|title     |body         |  
+|texto1    |body2        |
+|texto2    |body2        |
+|texto3    |body3        |
+|texto4    |body4        | 
 
 
+Scenario Outline: Testar a criação de recursos com o método (operação) POST na API /posts utilizando uma request (json) externa com 3 requests diferentes. Utilizando somente um arquivo externo. E verificar que o retorno de um dos campos da request não tem dados inválidos.
 
+Given url url_base
+And path '/posts'
+And request request_json_final
+When method post
+Then status 201
+And match $.title == '<title>'
+And match $.body == '<body>'
+And match $.body != '<body_retorno_errado>'
+
+
+Examples:
+|title     |body         |body_retorno_errado       |   
+|texto1    |body2        |body1                     |
+|texto2    |body2        |body3                     |
+|texto3    |body3        |body4                     |
+|texto4    |body4        |body5                     |
