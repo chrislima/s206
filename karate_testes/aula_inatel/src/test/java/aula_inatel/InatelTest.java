@@ -10,7 +10,7 @@ class InatelTest {
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:aula_inatel")
-                .tags("~@ignore")
+                .tags("@regression")
                 //.outputCucumberJson(true)
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
