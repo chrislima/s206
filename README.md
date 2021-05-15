@@ -1,4 +1,4 @@
-[![cypressci](https://github.com/chrislima/s206/workflows/CypressCI/badge.svg)](https://github.com/chrislima/CypressCI/actions)
+[![cypressci](https://github.com/chrislima/s206/workflows/CypressCI/badge.svg)](https://github.com/chrislima/s206/actions/)
 
 
 # S206 - Qualidade de Software
