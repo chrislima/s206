@@ -1,12 +1,15 @@
+[![cypressci](https://github.com/chrislima/s206/workflows/CypressCI/badge.svg)](https://github.com/chrislima/s206/actions/)
+
+
 # S206 - Qualidade de Software
 - Repositório da disciplina Qualidade de Software - S206. 
 - Instituto Nacional de Telecomunicações - Inatel. 
 - Curso: Engenharia de Software.
 - Prof. Christopher Lima
 
-Para acompanhar a parte prática desta disciplina, será necessário utilizar algumas ferramentas:
+Para acompanhar a parte prática desta disciplina, será necessário utilizar algumas ferramentas para quem utiliza o SO Windows:
 
-## Instalação
+## Instalação - Cypress:
 
 1. cmder (linda de comando que já instala algumas dependências):
 https://cmder.net/
@@ -21,17 +24,30 @@ https://git-scm.com/downloads
 https://code.visualstudio.com/
 OBS: Pode usar qualquer IDE.
 
-5. Maven (mvn):
+5. Caso não queira utilizar o cypress pelo NPM, pode fazer o download direto do site: https://www.cypress.io/
+
+Link para download direto: https://download.cypress.io/desktop
+
+Basta baixar, extrair, executar o Cypress.exe e apontar para o diretório do projeto desejado na interface do cypress.
+Utilize a IDE para editar o código caso seja necessário.
+
+## Instalação - Karate:
+
+1. cmder (linda de comando que já instala algumas dependências):
+https://cmder.net/
+
+2. Git (git):
+https://git-scm.com/downloads
+
+3. IDE VSCode (code):
+https://code.visualstudio.com/
+OBS: Pode usar qualquer IDE.
+
+4. Maven (mvn):
 https://maven.apache.org
 
-6. JDK (java):
+5. JDK (java):
 https://www.oracle.com/java/technologies/javase-downloads.html
-
-7. Postman
-https://www.postman.com
-
-Para instalação do Maven e JDK, utilize:
-https://www.baeldung.com/install-maven-on-windows-linux-mac
 
 
 Após a instalação de todos os itens, teste seu ambiente:
