@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
+        node-version: [14.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,7 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
-        cd cypress_tests
+        cd cypress_testes
         npm install
         ./node_modules/.bin/cypress run --spec 'cypress/integration/aula_inatel/**/'
       
