@@ -1,3 +1,6 @@
+[![cypressci](https://github.com/chrislima/s206/workflows/CypressCI/badge.svg)](https://github.com/chrislima/CypressCI/actions)
+
+
 # S206 - Qualidade de Software
 - Repositório da disciplina Qualidade de Software - S206. 
 - Instituto Nacional de Telecomunicações - Inatel. 
