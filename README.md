@@ -73,6 +73,12 @@ A resposta de cada comando deve ser a versão instalada.
 ### Comandos úteis cypress (utilize a aula para enteder o que cada comando faz):
 
 ```
+Criar o diretório inicial (caso não tenha o código do git)
+npm init
+
+Baixar as dependencias do projeto (caso já tenha baixdo o código do git)
+npm install
+
 Abrir cypress pela linha de comando:
 ./node_modules/.bin/cypress open
 
