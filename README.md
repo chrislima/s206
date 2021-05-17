@@ -73,19 +73,27 @@ A resposta de cada comando deve ser a versão instalada.
 ### Comandos úteis cypress (utilize a aula para enteder o que cada comando faz):
 
 ```
+Criar o diretório inicial (caso não tenha o código do git)
+npm init
+
+Baixar as dependencias do projeto (caso já tenha baixdo o código do git)
+npm install
+
 Abrir cypress pela linha de comando:
 ./node_modules/.bin/cypress open
 
 Rodar specs por linha de comando:
 ./node_modules/.bin/cypress run --spec 'cypress/integration/aula_inatel/**/'
 
-Adicionando as dependências necessárias:
+Para gerar um report HTML, siga os 3 comandos abaixo:
+
+1. Adicionando as dependências necessárias para gerar o reporte de testes:
 npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator 
 	
-Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
+2. Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
 npx mochawesome-merge "cypress/reports/*.json" > mochawesome.json 
 
-Gerando o HTML bonito com os reports:
+3. Gerando o HTML bonito com os reports:
 npx marge mochawesome.json 
 
 ```
