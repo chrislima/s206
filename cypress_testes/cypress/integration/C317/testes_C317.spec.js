@@ -1,5 +1,7 @@
 /// <reference types="cypress"/>
 
+//Este arquivo é um exemplo para a turma C317 utilizar como base na criação de testes de UI com Cypress.
+
 describe('Caso de Teste: 1', () => {
 
     it('Cenario de Teste: 1', () => { 
