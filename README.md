@@ -85,13 +85,15 @@ Abrir cypress pela linha de comando:
 Rodar specs por linha de comando:
 ./node_modules/.bin/cypress run --spec 'cypress/integration/aula_inatel/**/'
 
-Adicionando as dependências necessárias:
+Para gerar um report HTML, siga os 3 comandos abaixo:
+
+1. Adicionando as dependências necessárias para gerar o reporte de testes:
 npm install --save-dev mochawesome mochawesome-merge mochawesome-report-generator 
 	
-Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
+2. Fazendo merge dos arquivos .json gerados (Após a execução dos testes):
 npx mochawesome-merge "cypress/reports/*.json" > mochawesome.json 
 
-Gerando o HTML bonito com os reports:
+3. Gerando o HTML bonito com os reports:
 npx marge mochawesome.json 
 
 ```
