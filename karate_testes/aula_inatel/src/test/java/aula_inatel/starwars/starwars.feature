@@ -31,8 +31,8 @@ And path 'planets/7/'
 When method get
 Then status 200
 And match response.name == "Endor"
-And match response.residents[0] == "http://swapi.dev/api/people/30/"
-And match response.films[0] == "http://swapi.dev/api/films/3/"
+And match response.residents[0] == "https://swapi.dev/api/people/30/"
+And match response.films[0] == "https://swapi.dev/api/films/3/"
 
 Scenario: Verificar o retorno com sucesso da API /starships/9/ com dados válidos de requisição (request) e garantir que o retorno tem o JSON esperado (films). Utilizar o retorno de films como input para outro teste funcional que verifica o titulo do filme no retorno do json.
 
