@@ -9,7 +9,7 @@
 
 Para acompanhar a parte prática desta disciplina, será necessário utilizar algumas ferramentas para quem utiliza o SO Windows:
 
-## Instalação - Cypress:
+## Instalação - Cypress (Teste de UI):
 
 1. cmder (linda de comando que já instala algumas dependências):
 https://cmder.net/
@@ -29,9 +29,9 @@ OBS: Pode usar qualquer IDE.
 Link para download direto: https://download.cypress.io/desktop
 
 Basta baixar, extrair, executar o Cypress.exe e apontar para o diretório do projeto desejado na interface do cypress.
-Utilize a IDE para editar o código caso seja necessário.
+Utilize a IDE para editar o código.
 
-## Instalação - Karate:
+## Instalação - Karate (Teste de API):
 
 1. cmder (linda de comando que já instala algumas dependências):
 https://cmder.net/
@@ -123,3 +123,12 @@ mvn test -Dkarate.options="--tags ~@tag"
 Todas as tags podem ser configuradas na classe da suíte de testes. (InatelTest.Java)
 
 ```
+
+## Caso queira uma solução mais robusta para ter Ubuntu rodando dentro do Windows (WSL + JDK GWSL):
+
+https://www.youtube.com/watch?v=qb2ClX7BQ78
+
+## Instalação da IDE IntelliJ (É preciso fazer a instalação anterior)
+
+https://www.youtube.com/watch?v=cvKO2YciYe8
+
