@@ -1,5 +1,5 @@
 [![cypressci](https://github.com/chrislima/s206/workflows/CypressCI/badge.svg)](https://github.com/chrislima/s206/actions/)
-[![karateci](https://github.com/chrislima/s206/workflows/Karate CI with Maven/badge.svg)](https://github.com/chrislima/s206/actions/)
+[![karateci](https://github.com/chrislima/s206/workflows/KarateCI/badge.svg)](https://github.com/chrislima/s206/actions/)
 
 
 
