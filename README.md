@@ -13,8 +13,8 @@ Para acompanhar a parte prática desta disciplina, será necessário utilizar al
 
 ## Instalação - Cypress (Teste de UI):
 
-1. cmder (linda de comando que já instala algumas dependências):
-https://cmder.net/
+1. Git Bash (Git for Windows - mais leve)
+https://gitforwindows.org/
 
 2. Nodejs (node):
 https://nodejs.org/en/
@@ -35,8 +35,8 @@ Utilize a IDE para editar o código.
 
 ## Instalação - Karate (Teste de API):
 
-1. cmder (linda de comando que já instala algumas dependências):
-https://cmder.net/
+1. Git Bash (Git for Windows - mais leve)
+https://gitforwindows.org/
 
 2. Git (git):
 https://git-scm.com/downloads
@@ -53,7 +53,7 @@ https://www.oracle.com/java/technologies/javase-downloads.html
 
 
 Após a instalação de todos os itens, teste seu ambiente:
-Abra a linha de comando (cmder) e digite:
+Abra a linha de comando (gitbash ou cmder) e digite:
 
 ### Testando as instalações
 
@@ -75,10 +75,10 @@ A resposta de cada comando deve ser a versão instalada.
 ### Comandos úteis cypress (utilize a aula para enteder o que cada comando faz):
 
 ```
-Criar o diretório inicial (caso não tenha o código do git)
+Criar o diretório inicial e indicar para o node que o diretório é um projeto
 npm init
 
-Baixar as dependencias do projeto (caso já tenha baixdo o código do git)
+Baixar as dependencias do projeto (caso já tenha baixado o código do git)
 npm install
 
 Abrir cypress pela linha de comando:
