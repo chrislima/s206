@@ -19,14 +19,11 @@ https://gitforwindows.org/
 2. Nodejs (node):
 https://nodejs.org/en/
 
-3. Git (git):
-https://git-scm.com/downloads
-
-4. IDE VSCode (code):
+3. IDE VSCode (code):
 https://code.visualstudio.com/
 OBS: Pode usar qualquer IDE.
 
-5. Caso não queira utilizar o cypress pelo NPM, pode fazer o download direto do site: https://www.cypress.io/
+4. Caso não queira utilizar o cypress pelo NPM, pode fazer o download direto do site: https://www.cypress.io/
 
 Link para download direto: https://download.cypress.io/desktop
 
@@ -38,17 +35,14 @@ Utilize a IDE para editar o código.
 1. Git Bash (Git for Windows - mais leve)
 https://gitforwindows.org/
 
-2. Git (git):
-https://git-scm.com/downloads
-
-3. IDE VSCode (code):
+2. IDE VSCode (code):
 https://code.visualstudio.com/
 OBS: Pode usar qualquer IDE.
 
-4. Maven (mvn):
+3. Maven (mvn):
 https://maven.apache.org
 
-5. JDK (java):
+4. JDK (java):
 https://www.oracle.com/java/technologies/javase-downloads.html
 
 
