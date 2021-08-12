@@ -1,13 +1,13 @@
 /// <reference types="cypress"/>
 
-describe('Caso de Teste: Testar funcionalidades da página testpages hospedada com herokuapp', () => {
+describe('Cenário de Teste: Testar funcionalidades da página testpages hospedada com herokuapp', () => {
 
     const userName = 'QA NINJA Inatel';
     const userPass = 'qaninjainatel';
     const userMail = 'qaninjainatel@qaninjainatel.com';
     const signedInMessage = 'Signed in successfully.'
 
-    it('Cenário: Testar o form com valores de E-mail e Number válidos. Logo em seguida, testar o tamanho da div na página de forms HTML5.', () => {
+    it('Caso: Testar o form com valores de E-mail e Number válidos. Logo em seguida, testar o tamanho da div na página de forms HTML5.', () => {
 
         cy.visit('https://testpages.herokuapp.com/styled/html5-form-test.html');
         cy.get('#email-field').clear();
@@ -28,7 +28,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
 
     });
 
-    it('Cenário: Testar alertas da pagina Fake Alert com texto parcial e completo', () => {
+    it('Caso: Testar alertas da pagina Fake Alert com texto parcial e completo', () => {
 
         cy.visit('https://testpages.herokuapp.com');
         cy.get('#fakealerttest').click();
@@ -47,7 +47,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
 
     });
 
-    it('Cenário: Testar a calculadora presente em testpages, utilizando todas as 4 operações disponíveis.', () => {
+    it('Caso: Testar a calculadora presente em testpages, utilizando todas as 4 operações disponíveis.', () => {
 
         const operations = ['plus', 'times', 'minus', 'divide'];
         var value1 = Math.floor(Math.random() * 100);
@@ -85,7 +85,7 @@ describe('Caso de Teste: Testar funcionalidades da página testpages hospedada c
 
     });
 
-    it('Cenário: Verificar que a calculadora do cenário anterior retorna o código de erro ERR quando os campos de entrada estão vazios.', () => {
+    it('Caso: Verificar que a calculadora do Caso anterior retorna o código de erro ERR quando os campos de entrada estão vazios.', () => {
 
         let answer = 'ERR';
         cy.visit('https://testpages.herokuapp.com/styled/calculator');

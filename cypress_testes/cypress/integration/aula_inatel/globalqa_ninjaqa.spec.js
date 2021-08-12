@@ -1,8 +1,8 @@
 /// <reference types="cypress"/>
 
-describe('Caso de Teste: Testar funcionalidades de Login do site globalsqa (angularjs)', () => {
+describe('Cenário de Teste: Testar funcionalidades de Login do site globalsqa (angularjs)', () => {
 
-    it('Cenario de Teste: Registrar um usuario com sucesso!', () => { 
+    it('Caso de Teste: Registrar um usuario com sucesso!', () => { 
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login');
         cy.get('.btn-link').click();
         cy.get('#firstName').type('ninjaqaInatel');
@@ -14,7 +14,7 @@ describe('Caso de Teste: Testar funcionalidades de Login do site globalsqa (angu
         
     });
 
-    it('Cenario de Teste: Falha ao tentar registrar um usuario com dados errados!', () => {
+    it('Caso de Teste: Falha ao tentar registrar um usuario com dados errados!', () => {
         //Aumentando a cobertura de testes. Accesamos a mesma página por 2 caminhos diferentes (Olhar exemplo anterior).
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/register');
         cy.get('#firstName').type('ninjaqaInatel');
@@ -27,7 +27,7 @@ describe('Caso de Teste: Testar funcionalidades de Login do site globalsqa (angu
 
     });
 
-    it('Cenario de Teste: Login na plataforma com sucesso!', () => { 
+    it('Caso de Teste: Login na plataforma com sucesso!', () => { 
         //Boa pratica: Nunca usar dados de testes anteriores.
         var userInfo = createUserNinjaQa();
         cy.visit('https://www.globalsqa.com/angularJs-protractor/registration-login-example/#/login');
@@ -38,7 +38,7 @@ describe('Caso de Teste: Testar funcionalidades de Login do site globalsqa (angu
 
     });
 
-    it('Cenario de Teste: Remover um usuario cadastrado e verificar!', () => { 
+    it('Caso de Teste: Remover um usuario cadastrado e verificar!', () => { 
         var userInfo = createUserNinjaQa();
         cy.loginNinjaQa(userInfo[0], userInfo[1]);
         cy.get('.ng-binding > a').click();
