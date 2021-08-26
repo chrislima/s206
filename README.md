@@ -26,6 +26,9 @@ OBS: Pode usar qualquer IDE. Eclipse, InteliJ...fica a seu critério.
 4. JDK (java):
 https://www.oracle.com/java/technologies/javase-downloads.html
 
+5. Maven (mvn)
+https://maven.apache.org
+
 
 ## Instalação - Cypress (Teste de UI):
 1. Faça a instalação do cypress via linha de comando. Abra o terminal e digite
